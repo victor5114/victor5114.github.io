@@ -1,2 +1,5 @@
 # Node Debug
 ../npm-debug.log
+
+# build folder
+build/

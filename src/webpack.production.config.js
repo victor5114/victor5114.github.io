@@ -7,6 +7,7 @@ const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 
 
 const CCS_LOAD_STR = 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]';
+const DEST = '../build';
 
 // local css modules
 loaders.push({
@@ -31,7 +32,7 @@ module.exports = {
     './app/index.jsx',
   ],
   output: {
-    path: path.join(__dirname, 'public'),
+    path: path.join(__dirname, DEST),
     filename: '[chunkhash].js',
   },
   resolve: {
