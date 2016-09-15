@@ -42,7 +42,7 @@ module.exports = {
     'webpack/hot/only-dev-server',
     './app/index.jsx', // Your appʼs entry point
   ],
-  devtool: process.env.WEBPACK_DEVTOOL || 'cheap-module-source-map',
+  devtool: process.env.WEBPACK_DEVTOOL || 'inline-source-map',
   output: {
     path: path.join(__dirname, DEST),
     filename: 'bundle.js',
