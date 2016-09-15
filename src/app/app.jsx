@@ -20,7 +20,6 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    // console.log(this.scroller);
     this.scroller.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.handleScroll);
   }
@@ -33,7 +32,7 @@ export default class App extends Component {
 
   handleScroll() {
     // Should see new state updated when we scroll
-    // console.log(this.state);
+    console.log(this.state);
     if (!this.running) {
       let scrollPos = this.scroller.scrollTop;
       let height = document.documentElement.clientHeight * 2;
@@ -58,6 +57,7 @@ export default class App extends Component {
         <p>
           Some text with <span className={styles.blueBg}>emphazised</span> span
         </p>
+        <p>Another text</p>
       </div>
     );
   }

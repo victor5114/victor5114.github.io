@@ -7,7 +7,7 @@ const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 
 
 const CCS_LOAD_STR = 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]';
-const DEST = '../build';
+const DEST = './build';
 
 // local css modules
 loaders.push({
@@ -52,7 +52,7 @@ module.exports = {
       compress: {
         warnings: false,
         screw_ie8: true,
-        drop_console: true,
+        drop_console: false,
         drop_debugger: true,
       },
     }),
