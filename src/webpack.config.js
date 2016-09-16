@@ -40,7 +40,7 @@ module.exports = {
   entry: [
     `webpack-dev-server/client?http://${HOST}:${PORT}`,
     'webpack/hot/only-dev-server',
-    './app/index.jsx', // Your appʼs entry point
+    './app/index.jsx', // The appʼs entry point
   ],
   devtool: process.env.WEBPACK_DEVTOOL || 'inline-source-map',
   output: {
@@ -54,7 +54,7 @@ module.exports = {
     loaders,
   },
   devServer: {
-    contentBase: './public',
+    contentBase: './',
     // do not print bundle build stats
     noInfo: true,
     // enable HMR

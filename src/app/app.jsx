@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 
 import styles from './index.scss';
+import { getHeight } from './utils/window';
 
 export default class App extends Component {
 
@@ -9,7 +10,7 @@ export default class App extends Component {
     super(props);
 
     this.scroller = typeof document === 'object' &&
-      document.getElementsByClassName('container')[0];
+      document.getElementById('content');
 
     this.state = {
       scroll: (typeof this.scroller === 'object' && this.scroller.scrollTop) || 0,
@@ -20,8 +21,9 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    this.scroller.addEventListener('scroll', this.handleScroll);
-    window.addEventListener('resize', this.handleScroll);
+    this.scroller = this.scroller.firstChild;
+    this.scroller.addEventListener('scroll', this.handleScroll, true);
+    window.addEventListener('resize', this.handleScroll, true);
   }
 
   componentWillUnmount() {
@@ -31,17 +33,17 @@ export default class App extends Component {
   }
 
   handleScroll() {
-    // Should see new state updated when we scroll
-    console.log(this.state);
     if (!this.running) {
+      const h = getHeight();
       let scrollPos = this.scroller.scrollTop;
-      let height = document.documentElement.clientHeight * 2;
+      let height = h * 2;
+
       if (scrollPos < height) {
         this.running = true;
         window.requestAnimationFrame(() => {
           this.running = false;
           scrollPos = this.scroller.scrollTop;
-          height = document.documentElement.clientHeight;
+          height = getHeight();
           this.setState({
             scroll: scrollPos,
             height,
@@ -53,12 +55,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="innerContent">
-        <p>
-          Some text with <span className={styles.blueBg}>emphazised</span> span
-        </p>
-        <p>Another text</p>
-      </div>
+      <div className={styles.cardSurface} />
     );
   }
 }

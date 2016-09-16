@@ -2,7 +2,7 @@ module.exports = [
   {
     test: /\.jsx?$/,
     exclude: /(node_modules|bower_components|public)/,
-    loaders: ['react-hot'],
+    loaders: ['react-hot-loader/webpack'],
   },
   {
     test: /\.jsx?$/,
@@ -41,7 +41,8 @@ module.exports = [
   {
     test: /\.jpg/,
     exclude: /(node_modules|bower_components)/,
-    loader: 'url-loader?limit=10000&mimetype=image/jpg',
+    loader: 'url-loader',
+    //loader: 'url-loader?limit=10000&mimetype=image/jpg',
   },
   {
     test: /\.png/,
