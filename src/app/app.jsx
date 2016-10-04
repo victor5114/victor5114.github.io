@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 
-import { getHeight } from './utils/window';
-// import { cardMove, l } from './utils/animation';
+import { getHeight, isMobile } from './utils/window';
+import { cardMove, l, n } from './utils/animation';
 
 import './index.scss';
 
@@ -38,7 +38,7 @@ export default class App extends Component {
     if (!this.running) {
       const h = getHeight();
       let scrollPos = this.scroller.scrollTop;
-      let height = h * 3;
+      let height = h * 2;
 
       if (scrollPos < height) {
         this.running = true;
@@ -56,25 +56,30 @@ export default class App extends Component {
   }
 
   render() {
-    // const ms = this.state.scroll;
-    // const s = ms - (isMobile() ? 10 : 50);
-    // const hei = this.state.height;
-    // var r = prng(1234567890);
+    const ms = this.state.scroll;
+    const s = ms - (isMobile() ? 10 : 50);
+    const hei = this.state.height;
+    // const r = prng(1234567890);
 
     return (
       <div className="content">
         <div className="cardSurface" >
           <div className="card">
-            {/* <div className="cardFront" style={cardMove(ms, hei)}>
+            <div className="cardFront" style={cardMove(ms, hei)}>
               <svg className="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1124 142">
                 <g transform="translate(562, 71)">
-                  <g fill="#FF744C">
-                    {/* L
-                    <rect opacity="0.70" style={l(s - 30)} x="-562" y="37" width="94" height="32" />
+                  <g fill="#5D7AD7">
+                    <rect opacity="0.80" style={l(s - 30)} x="-562" y="37" width="94" height="32" />
+                  </g>
+                  <g fill="#FFAC5C">
+                    <polygon
+                      opacity="0.80" style={n(s - 240)}
+                      points="561.6,69 522.3,69 436.7,-69 475.9,-69"
+                    />
                   </g>
                 </g>
               </svg>
-            </div> */}
+            </div>
           </div>
         </div>
         <div className="section_2">

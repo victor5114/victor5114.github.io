@@ -1,5 +1,9 @@
 import { isMobile } from './window';
 
+const D2R = Math.PI / 180;
+const xd = Math.sin(D2R * 30);
+const yd = Math.cos(D2R * 30);
+
 function t(s) {
   return {
     transform: s,
@@ -17,12 +21,24 @@ export function l(size) {
   return t(`translateX(${dx}px)`);
 }
 
+export function n(_s) {
+  let s = _s;
+  if (s < 0) {
+    s = 0;
+  }
+
+  const d = -7;
+  const x = s * d * xd;
+  const y = s * d * yd;
+  return t(`translate(${x}px, ${y}px)`);
+}
+
 export function cardMove(s, hh) {
   if (s === 0 || isMobile()) {
     return {};
   }
   if (s < 0) {
-    return t(`translate3d(0, ${-s}px,0)`);
+    return t(`translate3d(0, ${-s}px, 0)`);
   }
 
   const notimes = Math.min(1, s / hh);

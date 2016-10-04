@@ -90,79 +90,79 @@ hr {
   max-height: 330px;
   min-width: 460px;
   min-height: 253px;
+}
 
-  .cardBack a {
-    color: #505050;
-    text-decoration: none;
-  }
+.desktop .cardBack a {
+  color: #505050;
+  text-decoration: none;
+}
 
-  .cardBack a:hover {
-    text-decoration: underline;
-  }
+.desktop .cardBack a:hover {
+  text-decoration: underline;
+}
 
-  .cardFront {
-    height: 100%;
-    background: white;
-    box-shadow: 0 1px 8px 1px rgba(0,0,0,0.2);
+.desktop .cardFront {
+  height: 100%;
+  background: white;
+  box-shadow: 0 1px 8px 1px rgba(0,0,0,0.2);
 
-    box-sizing: border-box;
-    padding: 13%;
+  box-sizing: border-box;
+  padding: 13%;
 
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translate3d(0,0,3px);
-    transform: translate3d(0,0,3px);
-  }
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0,0,3px);
+  transform: translate3d(0,0,3px);
+}
 
-  .logo {
-    overflow: visible;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 50vh 50vw;
-    margin: -50vh -50vw;
-  }
+.desktop .logo {
+  overflow: visible;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 50vh 50vw;
+  margin: -50vh -50vw;
+}
 
-  .cardBack {
-    box-sizing: border-box;
-    position: absolute;
-    top: -40.909090%;
-    left: 22.5%;
-    right: 22.5%;
-    bottom: -40.909090%;
+.desktop .cardBack {
+  box-sizing: border-box;
+  position: absolute;
+  top: -40.909090%;
+  left: 22.5%;
+  right: 22.5%;
+  bottom: -40.909090%;
 
-    padding: 2em 1.5em;
+  padding: 2em 1.5em;
 
-    background: white;
-    box-shadow: 0 1px 8px 1px rgba(0,0,0,0.2);
+  background: white;
+  box-shadow: 0 1px 8px 1px rgba(0,0,0,0.2);
 
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translate3d(0,0,0) rotateX(180deg) rotateZ(90deg);
-    transform: translate3d(0,0,0) rotateX(180deg) rotateZ(90deg);
-  }
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0,0,0) rotateX(180deg) rotateZ(90deg);
+  transform: translate3d(0,0,0) rotateX(180deg) rotateZ(90deg);
+}
 
-  .cardBottomEdge {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translateY(-50%) rotateX(0.25turn);
-    transform: translateY(-50%) rotateX(0.25turn);
-  }
+.desktop .cardBottomEdge {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateY(-50%) rotateX(0.25turn);
+  transform: translateY(-50%) rotateX(0.25turn);
+}
 
-  .desktop .cardBottomEdge::after {
-    display: block;
-    content: '';
-    position: absolute;
-    bottom: 50%;
-    width: 100%;
-    height: 3px;
-    background: #FF744C;
-  }
+.desktop .cardBottomEdge::after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  height: 3px;
+  background: #FF744C;
 }
 
 /* MOBILE */
