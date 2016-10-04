@@ -5,20 +5,18 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 
-
-const CCS_LOAD_STR = 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]';
 const DEST = './build';
 
 // local css modules
 loaders.push({
   test: /[\/\\]app[\/\\].*\.css/,
-  loader: ExtractTextPlugin.extract('style', CCS_LOAD_STR),
+  loader: ExtractTextPlugin.extract('style', 'css'),
 });
 
 // local scss modules
 loaders.push({
   test: /[\/\\]app[\/\\].*\.scss/,
-  loader: ExtractTextPlugin.extract('style', CCS_LOAD_STR, 'sass'),
+  loader: ExtractTextPlugin.extract('style', 'css', 'sass'),
 });
 
 // global css files

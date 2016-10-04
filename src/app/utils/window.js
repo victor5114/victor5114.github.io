@@ -9,3 +9,7 @@ export function getWidth() {
     || document.documentElement.clientWidth
     || document.body.clientWidth;
 }
+
+export function isMobile() {
+  return !(typeof window === 'object' && !window.isMobile);
+}
