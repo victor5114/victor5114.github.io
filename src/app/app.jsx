@@ -72,106 +72,99 @@ export default class App extends Component {
         <div className="cardSurface" >
           <div className="card">
             <div className="cardFront" style={cardMove(ms, hei)}>
-              <svg className="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1124 142">
-                <g transform="translate(562, 71)">
-                  <g opacity="0.55" fill="#262628">
-
-                    <rect style={v(s - 15, r)} x="-562" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 18, r)} x="-554.6" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 21, r)} x="-547.1" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 24, r)} x="-539.7" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 27, r)} x="-532.2" y="-69" width="2.5" height="138" />
-
-                    <rect style={h(s - 50, r)} x="-446" y="-69" width="91" height="2.5" />
-                    <rect style={h(s - 53, r)} x="-446" y="-61.6" width="91" height="2.5" />
-                    <rect style={h(s - 56, r)} x="-446" y="-54.1" width="91" height="2.5" />
-                    <rect style={h(s - 59, r)} x="-446" y="-46.7" width="91" height="2.5" />
-                    <rect style={h(s - 62, r)} x="-446" y="-39.5" width="91" height="2.5" />
-                    <rect style={h(s - 70, r)} x="-446" y="-16.5" width="85" height="2.5" />
-                    <rect style={h(s - 73, r)} x="-446" y="-9.1" width="85" height="2.5" />
-                    <rect style={h(s - 76, r)} x="-446" y="-1.6" width="85" height="2.5" />
-                    <rect style={h(s - 79, r)} x="-446" y="5.8" width="85" height="2.5" />
-                    <rect style={h(s - 82, r)} x="-446" y="13.3" width="85" height="2.5" />
-                    <rect style={h(s - 90, r)} x="-446" y="37" width="94" height="2.5" />
-                    <rect style={h(s - 93, r)} x="-446" y="44.4" width="94" height="2.5" />
-                    <rect style={h(s - 96, r)} x="-446" y="51.9" width="94" height="2.5" />
-                    <rect style={h(s - 99, r)} x="-446" y="59.3" width="94" height="2.5" />
-                    <rect style={h(s - 102, r)} x="-446" y="66.5" width="94" height="2.5" />
-
-                    <rect style={h(s - 132, r)} x="-312" y="-69" width="91" height="2.5" />
-                    <rect style={h(s - 129, r)} x="-312" y="-61.6" width="91" height="2.5" />
-                    <rect style={h(s - 126, r)} x="-312" y="-54.1" width="91" height="2.5" />
-                    <rect style={h(s - 123, r)} x="-312" y="-46.7" width="91" height="2.5" />
-                    <rect style={h(s - 120, r)} x="-312" y="-39.5" width="91" height="2.5" />
-                    <rect style={h(s - 112, r)} x="-312" y="-16.5" width="85" height="2.5" />
-                    <rect style={h(s - 109, r)} x="-312" y="-9.1" width="85" height="2.5" />
-                    <rect style={h(s - 106, r)} x="-312" y="-1.6" width="85" height="2.5" />
-                    <rect style={h(s - 103, r)} x="-312" y="5.8" width="85" height="2.5" />
-                    <rect style={h(s - 100, r)} x="-312" y="13.3" width="85" height="2.5" />
-                    <rect style={h(s - 92, r)} x="-312" y="37" width="94" height="2.5" />
-                    <rect style={h(s - 89, r)} x="-312" y="44.4" width="94" height="2.5" />
-                    <rect style={h(s - 86, r)} x="-312" y="51.9" width="94" height="2.5" />
-                    <rect style={h(s - 83, r)} x="-312" y="59.3" width="94" height="2.5" />
-                    <rect style={h(s - 80, r)} x="-312" y="66.5" width="94" height="2.5" />
-
-                    <rect style={v(s - 110, r)} x="-113.1" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 113, r)} x="-120.6" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 116, r)} x="-128" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 119, r)} x="-135" y="-69" width="2.5" height="138" />
-
-                    <rect style={v(s - 122, r)} x="-105.9" y="-69" width="2.7" height="79.5" />
-                    <rect style={v(s - 125, r)} x="-98.1" y="-69" width="2.7" height="79.5" />
-                    <rect style={v(s - 128, r)} x="-90.3" y="-69" width="2.7" height="79.5" />
-                    <path style={v(s - 131, r)} d="M-80.9,-69h-1.6v79.5l1.6,0c0.4,0,0.7,0,1.1,0V-68.9C-80.1,-69,-80.4,-69,-80.9,-69z" />
-                    <path style={v(s - 134, r)} d="M-74.7,-68.4V10c0.9-0.1,1.8-0.3,2.7-0.5V-67.9C-73,-68.1,-73.8,-68.3,-74.7,-68.4z" />
-                    <path style={v(s - 137, r)} d="M-67,-66.4V8c0.9-0.3,1.8-0.7,2.7-1.1V-65.2C-65.2,-65.6,-66.1,-66,-67,-66.4z" />
-                    <path style={v(s - 140, r)} d="M-59.2,-62.4V4c0.9-0.6,1.8-1.2,2.7-1.9V-60.5C-57.4,-61.2,-58.3,-61.8,-59.2,-62.4z" />
-                    <path style={v(s - 143, r)} d="M-51.4,-55.7v53.1c0.9-1,1.8-2.1,2.7-3.3V-52.4C-49.6,-53.6,-50.5,-54.7,-51.4,-55.7z" />
-                    <path style={v(s - 147, r)} d="M-43.6,-42.8c1.6,4.3,2.4,8.8,2.4,13.6c0,4.8-0.8,9.4-2.4,13.6" />
-
-                    <polygon style={a(s - 140, r)} points="31,11 -16.9,-69 -19.9,-69 28,11" />
-                    <polygon style={a(s - 144, r)} points="39.2,11 -8.7,-69 -11.7,-69 36.2,11" />
-                    <polygon style={a(s - 148, r)} points="47.5,11 -0.4,-69 -3.4,-69 44.5,11" />
-                    <polygon style={a(s - 152, r)} points="55.8,11 7.9,-69 4.9,-69 52.8,11" />
-                    <polygon style={a(s - 156, r)} points="64,11 16.1,-69 13.1,-69 61,11" />
-
-                    <rect style={v(s - 183, r)} x="137" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 187, r)} x="144.4" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 191, r)} x="151.9" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 195, r)} x="159.3" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 199, r)} x="166.8" y="-69" width="2.5" height="138" />
-
-                    <path style={v(s - 200, r)} d="M273.6,-26v52c0.8,1.9,1.6,3.8,2.5,5.6V-31.6C275.2,-29.8,274.4,-27.9,273.6,-26z" />
-                    <path style={v(s - 202, r)} d="M281,-39.9v79.9c0.8,1.2,1.6,2.3,2.5,3.4V-43.4C282.6,-42.2,281.8,-41.1,281,-39.9z" />
-                    <path style={v(s - 204, r)} d="M288.4,-49V49c0.8,0.9,1.6,1.7,2.5,2.5v-103C290,-50.7,289.2,-49.9,288.4,-49z" />
-                    <path style={v(s - 206, r)} d="M295.7,-55.7v111.5c0.8,0.6,1.7,1.3,2.5,1.9V-57.6C297.4,-57,296.6,-56.4,295.7,-55.7z" />
-                    <path style={v(s - 208, r)} d="M303.1,-60.9v121.7c0.8,0.5,1.7,1,2.5,1.4V-62.3C304.8,-61.8,303.9,-61.3,303.1,-60.9z" />
-                    <path style={v(s - 210, r)} d="M311.3,-65.1v130.1c0.8,0.4,1.7,0.7,2.5,1V-66.1C312.9,-65.8,312.1,-65.4,311.3,-65.1z" />
-                    <path style={v(s - 212, r)} d="M318.2,-67.7v135.4c0.8,0.3,1.7,0.5,2.5,0.7V-68.4C319.9,-68.2,319,-67.9,318.2,-67.7z" />
-                    <path style={v(s - 214, r)} d="M325.6,-69.6v139.2c0.8,0.2,1.7,0.3,2.5,0.4V-70C327.2,-69.9,326.4,-69.8,325.6,-69.6z" />
-                    <path style={v(s - 216, r)} d="M332.9,-70.7v141.3c0.8,0.1,1.7,0.1,2.5,0.2V-70.9C334.6,-70.8,333.8,-70.8,332.9,-70.7z" />
-                    <path style={v(s - 218, r)} d="M340.3,-71v142c0.8,0,1.7,0,2.5-0.1V-70.9C342,-71,341.2,-71,340.3,-71z" />
-                    <path style={v(s - 220, r)} d="M347.7,-70.5v141.1c0.8-0.1,1.7-0.2,2.5-0.3V-70.2C349.4,-70.3,348.5,-70.4,347.7,-70.5z" />
-
-                    <rect style={v(s - 233, r)} x="436.7" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 236, r)} x="443.7" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 239, r)} x="451.1" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 242, r)} x="458.5" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 245, r)} x="466" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 247, r)} x="473.4" y="-69" width="2.5" height="138" />
-
-                    <rect style={v(s - 253, r)} x="522.3" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 256, r)} x="529.3" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 259, r)} x="536.8" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 262, r)} x="544.2" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 265, r)} x="551.7" y="-69" width="2.5" height="138" />
-                    <rect style={v(s - 262, r)} x="559.1" y="-69" width="2.5" height="138" />
+              <svg className="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 416.664 216.667">
+                <g transform="translate(0, 0)">
+                  <g opacity="0.95" fill="#5D79D7">
+                    <line className="st0" x1="122.344" y1="95.477" x2="123.37" y2="26.867" />
+                    <line className="st0" x1="117.515" y1="95.713" x2="84.483" y2="26.143" />
+                    <line className="st0" x1="122.528" y1="95.713" x2="89.496" y2="26.143" />
+                    <rect x="150.397" y="26.938" className="st1" width="8" height="70" />
+                    <circle className="st2" cx="154.333" cy="8.5" r="7.5" />
+                    <line className="st3" x1="188.755" y1="27.608" x2="188.755" y2="97.959" />
+                    <line className="st3" x1="183.964" y1="27.725" x2="183.964" y2="97.959" />
+                    <line className="st3" x1="204.292" y1="27.667" x2="204.292" y2="47.301" />
+                    <line className="st3" x1="179" y1="27.725" x2="179" y2="97.959" />
+                    <line className="st3" x1="204.292" y1="79.459" x2="204.292" y2="98.009" />
+                    <line className="st3" x1="199.167" y1="27.667" x2="199.167" y2="47.301" />
+                    <line className="st3" x1="199.167" y1="79.459" x2="199.167" y2="98.009" />
+                    <line className="st3" x1="193.917" y1="27.608" x2="193.917" y2="47.359" />
+                    <line className="st3" x1="193.917" y1="79.442" x2="193.917" y2="98.026" />
+                    <rect x="220.482" y="27.938" className="st4" width="8" height="70" />
+                    <line className="st5" x1="191.092" y1="0" x2="264.167" y2="0" />
+                    <line className="st5" x1="215.417" y1="2.917" x2="273.167" y2="2.667" />
+                    <polygon className="st6" points="263.26,2.601 252.039,18.624 193.703,14.517 199.808,2.611 " />
+                    <line className="st5" x1="81.819" y1="26.143" x2="87.147" y2="26.143" />
+                    <line className="st5" x1="116.926" y1="95.713" x2="122.059" y2="95.477" />
+                    <line className="st3" x1="260.755" y1="27.608" x2="260.755" y2="97.959" />
+                    <line className="st3" x1="255.964" y1="27.725" x2="255.964" y2="97.959" />
+                    <line className="st3" x1="276.292" y1="27.667" x2="276.292" y2="47.301" />
+                    <line className="st3" x1="251" y1="27.725" x2="251" y2="97.959" />
+                    <line className="st3" x1="276.292" y1="79.459" x2="276.292" y2="98.009" />
+                    <line className="st3" x1="271.167" y1="27.667" x2="271.167" y2="47.301" />
+                    <line className="st3" x1="271.167" y1="79.459" x2="271.167" y2="98.009" />
+                    <line className="st3" x1="265.917" y1="27.608" x2="265.917" y2="47.359" />
+                    <line className="st3" x1="265.917" y1="79.442" x2="265.917" y2="98.026" />
+                    <line className="st3" x1="281.833" y1="27.608" x2="281.833" y2="97.959" />
+                    <line className="st3" x1="286.975" y1="27.608" x2="286.975" y2="97.959" />
+                    <line className="st3" x1="292.117" y1="27.762" x2="292.117" y2="98.114" />
+                    <line className="st7" x1="312.582" y1="27.608" x2="312.582" y2="98.959" />
+                    <polygon className="st8" points="339.676,98.394 333.292,99.114 312.309,66.856 319.286,66.9 " />
+                    <line className="st3" x1="58.755" y1="116.608" x2="58.755" y2="186.959" />
+                    <line className="st3" x1="53.964" y1="116.725" x2="53.964" y2="186.959" />
+                    <line className="st3" x1="74.292" y1="116.667" x2="74.292" y2="136.301" />
+                    <line className="st3" x1="49" y1="116.725" x2="49" y2="186.959" />
+                    <line className="st3" x1="74.292" y1="168.459" x2="74.292" y2="187.009" />
+                    <line className="st3" x1="69.167" y1="116.667" x2="69.167" y2="136.301" />
+                    <line className="st3" x1="69.167" y1="168.459" x2="69.167" y2="187.009" />
+                    <line className="st3" x1="63.917" y1="116.608" x2="63.917" y2="136.359" />
+                    <line className="st3" x1="63.917" y1="168.442" x2="63.917" y2="187.026" />
+                    <line className="st3" x1="79.833" y1="116.608" x2="79.833" y2="186.959" />
+                    <line className="st3" x1="84.975" y1="116.608" x2="84.975" y2="186.959" />
+                    <line className="st3" x1="90.117" y1="116.762" x2="90.117" y2="187.114" />
+                    <line className="st3" x1="10.755" y1="117.608" x2="10.755" y2="187.959" />
+                    <line className="st3" x1="4.964" y1="117.725" x2="4.964" y2="187.959" />
+                    <line className="st3" x1="0" y1="117.725" x2="0" y2="187.959" />
+                    <path className="st9" d="M10.755,156.809v-39.083c10.793,0,19.542,8.749,19.542,19.542S21.547,156.809,10.755,156.809z" />
+                    <line className="st0" x1="149.593" y1="187.627" x2="116.561" y2="118.057" />
+                    <line className="st0" x1="144.541" y1="187.547" x2="111.51" y2="117.976" />
+                    <line className="st0" x1="111.842" y1="186.959" x2="111.486" y2="117.233" />
+                    <rect x="150.397" y="116.938" className="st10" width="8" height="70" />
+                    <line className="st3" x1="188.755" y1="116.608" x2="188.755" y2="186.959" />
+                    <line className="st3" x1="183.964" y1="116.725" x2="183.964" y2="186.959" />
+                    <line className="st3" x1="204.292" y1="116.667" x2="204.292" y2="136.301" />
+                    <line className="st3" x1="179" y1="116.725" x2="179" y2="186.959" />
+                    <line className="st3" x1="204.292" y1="161.108" x2="204.292" y2="187.009" />
+                    <line className="st3" x1="199.167" y1="116.667" x2="199.167" y2="136.301" />
+                    <line className="st3" x1="199.167" y1="161.108" x2="199.167" y2="187.009" />
+                    <line className="st3" x1="193.917" y1="116.608" x2="193.917" y2="136.359" />
+                    <line className="st3" x1="193.917" y1="168.442" x2="193.917" y2="187.026" />
+                    <line className="st3" x1="208.833" y1="161.108" x2="195.5" y2="161.108" />
+                    <line className="st0" x1="259.593" y1="185.627" x2="226.561" y2="116.057" />
+                    <line className="st0" x1="254.541" y1="185.547" x2="221.51" y2="115.976" />
+                    <line className="st0" x1="221.842" y1="184.959" x2="221.486" y2="115.233" />
+                    <rect x="285.599" y="115.849" className="st11" width="8" height="70" />
+                    {/* <ellipse className="st12" cx="289.53" cy="205.058" rx="8.137" ry="7.608" /> */}
+                    <line className="st0" x1="259.842" y1="185.959" x2="259.486" y2="116.233" />
+                    <line className="st0" x1="356.593" y1="183.627" x2="323.561" y2="114.057" />
+                    <line className="st0" x1="351.541" y1="183.547" x2="318.51" y2="113.976" />
+                    <line className="st0" x1="318.842" y1="182.959" x2="318.486" y2="113.233" />
+                    <rect x="318.833" y="145.957" className="st13" width="36.008" height="8" />
+                    <line className="st0" x1="416.774" y1="182.454" x2="383.742" y2="112.884" />
+                    <line className="st0" x1="411.541" y1="182.547" x2="378.51" y2="112.976" />
+                    <line className="st0" x1="416.842" y1="182.959" x2="416.486" y2="113.233" />
+                    <rect x="369.397" y="112.938" className="st10" width="8" height="70" />
+                    <path className="st9" d="M312.167,66.842V27.759c10.793,0,19.542,8.749,19.542,19.542S322.959,66.842,312.167,66.842z" />
+                    <line className="st3" x1="307.117" y1="27.608" x2="307.117" y2="99.114" />
+                    <g>
+                    <path className="st8" d="M333.292,99.114h6.954H333.292z" />
+                    <path className="st8" d="M339.676,98.394l0.57,0.72L339.676,98.394z" />
+                    </g>
                   </g>
                 </g>
               </svg>
             </div>
-            <div className="cardBottomEdge" style={cardMoveEdge(ms, hei, r)} />
-            <div className="cardBack" style={cardMoveBack(ms, hei, r)}>
+            {/* <div className="cardBottomEdge" style={cardMoveEdge(ms, hei)} /> */}
+            <div className="cardBack" style={cardMoveBack(ms, hei)}>
               <em>Design Technologist</em><br /><br />
             </div>
           </div>
